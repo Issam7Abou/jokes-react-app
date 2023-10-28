@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.joke-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100;
+    border: 2px solid #007bff; /* Add a blue border around the container */
+    padding: 20px; /* Add some padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.joke {
+    color: beige;
+    font-size: 24px;
+    margin: 20px 0;
+    max-width: 600px; /* Set a maximum width, adjust the value as needed */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show ellipsis (...) if the text overflows */
+}
+
+.author {
+    font-size: 16px;
+    color: #007bff;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
