@@ -19,6 +19,7 @@ const JokesService = ( {setJoke} ) => {
                 const data = await response.json(); 
                 console.log(data)
                 setJoke(data.joke) //set data to the joke context
+                setButtonClicked(false) //set button to false so it can run the fetch api again
             } catch (error) {
                 console.error(error);
             } finally {
@@ -27,13 +28,6 @@ const JokesService = ( {setJoke} ) => {
         }
         fetchJoke();
     }, [setButtonClicked, setJoke])
-
-    //
-    useEffect(() => {
-        if (!isLoading) {
-            setButtonClicked(false) //set button to false so it can run the fetch api again
-        }
-    }, [isLoading, setButtonClicked])
 
     return (
         <div>
