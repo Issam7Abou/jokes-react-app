@@ -10,9 +10,7 @@ const JokesDisplay = () => {
     const { buttonClicked, setButtonClicked } = useButtonContext();
 
     const handleButtonClick = () => {
-        console.log(buttonClicked)
         setButtonClicked(true);
-        console.log(buttonClicked)
     }
 
     return (
